@@ -1,0 +1,254 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* unvisited link */
+a:link {
+    color: #FF0000;
+}
+
+/* visited link */
+a:visited {
+    color: #00d8ff;
+}
+
+/* mouse over link */
+a:hover {
+    color: #FF00FF;
+}
+
+/* selected link */
+a:active {
+    color: #0000FF;
+}
+
+html { 
+    background-image: url("/img/canvas.jpg");
+    background-size:contain;
+}
+
+body {
+  color: #222;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+#wrapper
+{
+    margin:3em auto;
+    width:89%;
+    background:white;
+    -webkit-box-shadow:0 2px 35px rgba(0,0,0,0.2);
+    -moz-box-shadow:0 2px 35px rgba(0,0,0,0.2);
+    box-shadow:0 2px 35px rgba(0,0,0,0.2);
+
+}
+
+/* #wrapper {
+	height: auto;
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+} */
+#header {
+	height: auto;
+	width: auto;
+}
+/* #nav {   
+	height: 100px;
+	width: auto;
+	padding-left: 200px;
+	padding-top: 50px;
+} */
+#nav /* ul li */ {
+    
+    background-color: #fff;
+	border: 1px solid #dedede;
+	border-radius: 4px;
+	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+	color: #888;
+	display: block;
+	margin: 8px 22px 8px 22px;
+	overflow: hidden;
+	width: 90%;
+    
+   /*display: inline;
+    padding: .2em 1em;
+    font-size: 40px; */		
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+		
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s; 
+	}
+
+nav > ul > li > a {
+    color: #aaa;
+    display: block;
+    line-height: 56px;
+    padding: 0 24px;
+    text-decoration: none;
+	}
+
+nav > ul > li > a > .htmlist {
+    border-top: 4px solid #aaa;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+	content: "";
+	display: inline-block;
+	height: 0;
+	width: 0;
+	vertical-align: middle;
+	
+	-webkit-transition: color 0.1s linear;
+	-moz-transition: color 0.1s linear;
+	-o-transition: color 0.1s linear;
+	  transition: color 0.1s linear; 
+}
+
+nav > ul > li:hover {
+      background-color: rgb( 40, 44, 47 );
+        }
+
+ nav > ul > li:hover > a {
+       color: rgb( 255, 255, 255 );
+        }
+
+ nav > ul > li:hover > a > .htmlist {
+      border-top-color: rgb( 255, 255, 255 );
+        }
+
+nav > ul > li > div {
+	background-color: rgb( 40, 44, 47 );
+	border-top: 0;
+	border-radius: 0 0 4px 4px;
+	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+	display: none;
+	margin: 0;
+	opacity: 0;
+	position: absolute;
+	width: 165px;
+	visibility: hidden;
+	z-index: 100;
+	
+	-webkit-transiton: opacity 0.2s;
+	-moz-transition: opacity 0.2s;
+	-ms-transition: opacity 0.2s;
+	-o-transition: opacity 0.2s;
+	-transition: opacity 0.2s;
+}
+
+	nav > ul > li > div ul > li {
+		display: block;
+	}
+	
+nav > ul > li > div ul > li > a {
+	color: #fff;
+	display: block;
+	padding: 12px 24px;
+	text-decoration: none;
+		}
+	
+nav > ul > li > div ul > li:hover > a {
+	background-color: rgba( 255, 255, 255, 0.1);
+	}
+  	
+nav > ul > li:hover > div {
+	display: block;
+	opacity: 1;
+	visibility: visible;
+}
+	
+
+#content {
+	background-color: #FF0;
+	height: 800px;
+	width: auto;
+}
+#conleft {
+	background-color: #F0F;
+    width: 1000px;
+	height: auto;
+    float:left;
+}
+#html1 {
+    border: 1px solid black;
+    background-color: #fff;
+    font-family:monospace;
+    font-size: 11px;
+    width: 100px;
+	height: 60px;
+    float:left;
+}
+#footer {
+	background-color: #000;
+	height: 100px;
+	width: auto;
+	color: #FFF;
+	padding-left: 350px;
+	padding-top: 10px;
+}
+
+h1 {
+	font-size:40px;
+	color:#999;
+	text-align: center;
+	font-family:Verdana, Geneva, sans-serif;
+	font-style:italic;
+	}
+.shadow{box-shadow:  0em 5px 100px rgba(0,0, 0, 0.5);}
+
+.codeblock
+{
+	color: #333;
+	background-color: #fff;
+	margin: 0 0 20px 30px;
+	padding: 10px;
+	border: 1px solid #666;
+	width: 30em;
+	font-family: courier, "courier new", monospace;
+	line-height: 150%;
+}
+
+.colorCycle { background-color: red;
+
+;
+color: #FFF;
+
+animation-name: homeCycle;
+animation-duration:10ms;
+animation-direction:alternate;
+animation-iteration-count:infinite;
+
+-webkit-animation-name: homeCycle;
+-webkit-animation-duration:6000ms;
+-webkit-animation-direction:alternate;
+-webkit-animation-iteration-count:infinite; }
+
+@keyframes homeCycle
+{
+0% {background-color:red;}
+25% {background-color:cyan;}
+50% {background-color:red;}
+75% {background-color:cyan;}
+}
+
+@-webkit-keyframes homeCycle
+{
+0% {background-color:red;}
+25% {background-color:cyan;}
+50% {background-color:lime;}
+75% {background-color:blue;}
+}
+
