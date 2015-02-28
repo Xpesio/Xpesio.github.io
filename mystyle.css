@@ -35,12 +35,10 @@ body {
 
 #fixed1 { 
     background-color: #000;  
-    left: 700px;
-    top: 250px;
     position: fixed;
-    margin-left: auto;
-    margin-right: auto;
-
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 } 
 
 #wrapper
