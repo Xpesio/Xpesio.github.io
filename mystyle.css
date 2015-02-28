@@ -33,6 +33,11 @@ body {
   font-size: 15px;
 }
 
+video { 
+display: block;
+margin: 0 auto;
+}
+
 #fixed1 { 
     background-color: #000;  
     position: fixed;
